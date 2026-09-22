@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora de Posição - MUV</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="calculadora">
+
+        <h1>Calculadora de Posição em MUV
+            <br/> 
+            (Movimento Uniformemente  Variado)</h1>
+
+        <p>Calcule a posição final de um móvel utilizando a fórmula do MUV.</p>
+
+        <label>Posição inicial (S₀):</label>
+        <input type="number" id="posicaoInicial" placeholder="Ex: 10">
+
+        <label>Velocidade inicial (V₀):</label>
+        <input type="number" id="velocidadeInicial" placeholder="Ex: 5">
+
+        <label>Tempo (t):</label>
+        <input type="number" id="tempo" placeholder="Ex: 4">
+
+        <label>Aceleração (a):</label>
+        <input type="number" id="aceleracao" placeholder="Ex: 2">
+
+        <button onclick="calcularPosicao()">Calcular</button>
+
+        <button onclick="limparCampos()">Limpar</button>
+
+        <div id="resultado"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
